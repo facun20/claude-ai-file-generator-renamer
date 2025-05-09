@@ -105,6 +105,31 @@ DOCUMENT_FORMS = {
     # Add your custom codes here
 }
 ```
+## Cost Considerations
+
+Using Claude's API to analyze files incurs charges based on the number of tokens processed. Here's what you can expect:
+
+### Real-World Example
+- **1,600 files analyzed and renamed**: Approximately $7.64 total cost
+- **Average cost per file**: Less than $0.005 (half a cent per file)
+
+### Cost Factors
+- **File size and complexity**: Larger documents require more tokens to analyze
+- **File type**: Text-based files (like Word, PDF) cost more than image files since more content is analyzed
+- **Model used**: Claude 3.5 Sonnet offers a good balance of quality and cost
+
+### Cost Optimization Tips
+1. **Use selective processing**: Only analyze files that truly need renaming
+2. **Batch process files**: Run the tool during off-hours on batches of files
+3. **Limit content analysis**: The tool extracts at most 4,000 characters from each file
+4. **Use incognito mode for sensitive data**: Process sensitive files with local fallback naming when appropriate
+
+### Claude API Pricing
+Current Claude API pricing (as of May 2025) for Claude 3.5 Sonnet:
+- **Input tokens**: $3.00 per million tokens
+- **Output tokens**: $15.00 per million tokens
+
+For the most up-to-date pricing, visit the [Anthropic Pricing Page](https://www.anthropic.com/pric
 
 ## Contributing
 
